@@ -38,6 +38,7 @@
 #include <iostream>   // for cerr, cout
 #include <limits>     // for numeric_limits
 #include <utility>    // for move
+#include <iomanip>
 
 #if USE_GLOG_AND_GFLAGS
 #include <glog/logging.h>
@@ -56,6 +57,13 @@ namespace wht = std;
 #if HAS_GENERIC_LAMBDA
 #else
 #include <boost/bind/bind.hpp>
+
+
+#endif
+
+// 调试打印总开关：0 = 关闭（生产默认，编译器会把整段消掉）；1 = 打开
+#ifndef GNSS_SDR_VERBOSE_DEBUG
+#define GNSS_SDR_VERBOSE_DEBUG 0
 #endif
 
 
@@ -501,6 +509,15 @@ bool hybrid_observables_gs::interp_trk_obs(Gnss_Synchro &interpolated_obs, uint3
 
                             // 1st: copy the nearest gnss_synchro data for that channel
                             interpolated_obs = d_gnss_synchro_history->get(ch, nearest_element);
+#if GNSS_SDR_VERBOSE_DEBUG
+                            if (GNSS_SDR_VERBOSE_DEBUG) std::cout << "[OBS-NEAREST] ch=" << ch
+                                    << " rx_clock=" << rx_clock
+                                    << " nearest_element=" << nearest_element
+                                    << " TOW_at_nearest=" << d_gnss_synchro_history->get(ch, nearest_element).TOW_at_current_symbol_ms
+                                    << " Tracking_sample_counter_at_nearest=" << d_gnss_synchro_history->get(ch, nearest_element).Tracking_sample_counter
+                                    << std::endl;
+#endif
+
                             if (interpolated_obs.fs == 0LL)
                                 {
                                     return false;
@@ -512,6 +529,25 @@ bool hybrid_observables_gs::interp_trk_obs(Gnss_Synchro &interpolated_obs, uint3
                             const double time_factor = (T_rx_s - d_gnss_synchro_history->get(ch, t1_idx).RX_time) /
                                                        (d_gnss_synchro_history->get(ch, t2_idx).RX_time -
                                                            d_gnss_synchro_history->get(ch, t1_idx).RX_time);
+#if GNSS_SDR_VERBOSE_DEBUG
+                            // ============================================================
+                            // 诊断：插值输入
+                            // ============================================================
+                            static int obs_interp_dbg = 0;
+                            if (++obs_interp_dbg % 500 == 0)
+                            {
+                                if (GNSS_SDR_VERBOSE_DEBUG) std::cout << "[OBS-INTERP] ch=" << ch
+                                          << " t1_RX=" << d_gnss_synchro_history->get(ch, t1_idx).RX_time
+                                          << " t2_RX=" << d_gnss_synchro_history->get(ch, t2_idx).RX_time
+                                          << " dRX=" << (d_gnss_synchro_history->get(ch, t2_idx).RX_time - d_gnss_synchro_history->get(ch, t1_idx).RX_time)
+                                          << " t1_TOW=" << d_gnss_synchro_history->get(ch, t1_idx).TOW_at_current_symbol_ms
+                                          << " t2_TOW=" << d_gnss_synchro_history->get(ch, t2_idx).TOW_at_current_symbol_ms
+                                          << " dTOW=" << (static_cast<int64_t>(d_gnss_synchro_history->get(ch, t2_idx).TOW_at_current_symbol_ms) - static_cast<int64_t>(d_gnss_synchro_history->get(ch, t1_idx).TOW_at_current_symbol_ms))
+                                          << " time_factor=" << time_factor
+                                          << " T_rx_s=" << T_rx_s
+                                          << std::endl;
+                            }
+#endif
 
                             // CARRIER PHASE INTERPOLATION
                             // done in the late sample's polarity frame, whose PLL-180
@@ -724,6 +760,22 @@ void hybrid_observables_gs::compute_pranges(std::vector<Gnss_Synchro> &data) con
         {
             if (it->Flag_valid_word)
                 {
+#if GNSS_SDR_VERBOSE_DEBUG
+                    // ============================================================
+                    // 诊断：伪距计算中间量
+                    // ============================================================
+                    static int obs_tow_dbg = 0;
+                    if (++obs_tow_dbg % 500 == 0)
+                    {
+                        if (GNSS_SDR_VERBOSE_DEBUG) std::cout << "[OBS-TOW] ch=" << it->Channel_ID
+                                  << " PRN=" << it->PRN
+                                  << " current_T_rx_TOW_ms=" << current_T_rx_TOW_ms
+                                  << " interp_TOW_ms=" << it->interp_TOW_ms
+                                  << " TOW_at_current_symbol_ms=" << it->TOW_at_current_symbol_ms
+                                  << std::endl;
+                    }
+#endif
+
                     double traveltime_ms = current_T_rx_TOW_ms - it->interp_TOW_ms;
                     // check TOW roll over: half a week, in ms
                     if (traveltime_ms < -302400000.0)
@@ -744,6 +796,24 @@ void hybrid_observables_gs::compute_pranges(std::vector<Gnss_Synchro> &data) con
                             continue;
                         }
                     it->Pseudorange_m = traveltime_ms * SPEED_OF_LIGHT_M_MS;
+#if GNSS_SDR_VERBOSE_DEBUG
+                    // ============================================================
+                    // 诊断：伪距计算最终结果
+                    // ============================================================
+                    static int obs_pr_dbg = 0;
+                    if (++obs_pr_dbg % 500 == 0)
+                    {
+                        if (GNSS_SDR_VERBOSE_DEBUG) std::cout << "[OBS-PR] ch=" << it->Channel_ID
+                                << " PRN=" << it->PRN
+                                << " current_T_rx_TOW_ms=" << std::setprecision(15) << current_T_rx_TOW_ms
+                                << " interp_TOW_ms=" << std::setprecision(15) << it->interp_TOW_ms
+                                << " traveltime_ms=" << std::setprecision(15) << traveltime_ms
+                                << " Pseudorange_m=" << std::setprecision(15) << it->Pseudorange_m
+                                << " TOW_at_current_symbol_ms=" << it->TOW_at_current_symbol_ms
+                                << " Tracking_sample_counter=" << it->Tracking_sample_counter
+                                << std::endl;
+                    }
+#endif
                     it->Flag_valid_pseudorange = true;
                     // debug code
                     // std::cout << "[" << it->Channel_ID << "] interp_TOW_ms: " << it->interp_TOW_ms << '\n';
@@ -1315,6 +1385,25 @@ int hybrid_observables_gs::general_work(int noutput_items __attribute__((unused)
                                             // LOG(INFO) << "Channel " << d_gnss_synchro_history->front(n).Channel_ID << " changed satellite to PRN " << in[n][m].PRN;
                                         }
                                 }
+#if GNSS_SDR_VERBOSE_DEBUG
+                            // ============================================================
+                            // 诊断：观测量模块收到的 Gnss_Synchro
+                            // ============================================================
+                            static int obs_input_dbg = 0;
+                            if (++obs_input_dbg % 500 == 0)
+                            {
+                                if (GNSS_SDR_VERBOSE_DEBUG) std::cout << "[OBS-INPUT] n=" << n
+                                          << " m=" << m
+                                          << " PRN=" << in[n][m].PRN
+                                          << " TOW=" << in[n][m].TOW_at_current_symbol_ms
+                                          << " Tracking_sample_counter=" << in[n][m].Tracking_sample_counter
+                                          << " Code_phase_samples=" << in[n][m].Code_phase_samples
+                                          << " fs=" << in[n][m].fs
+                                          << " Channel_ID=" << in[n][m].Channel_ID
+                                          << std::endl;
+                            }
+#endif
+
                             d_gnss_synchro_history->push_back(n, in[n][m]);
                             d_gnss_synchro_history->back(n).RX_time = compute_T_rx_s(in[n][m]);
                         }

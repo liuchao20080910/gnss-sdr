@@ -22,6 +22,12 @@
 
 
 #include "tracking_2nd_DLL_filter.h"
+#include <iostream>
+
+// 调试打印总开关：0 = 关闭（生产默认，编译器会把整段消掉）；1 = 打开
+#ifndef GNSS_SDR_VERBOSE_DEBUG
+#define GNSS_SDR_VERBOSE_DEBUG 0
+#endif
 
 
 void Tracking_2nd_DLL_filter::calculate_lopp_coef(float* tau1, float* tau2, float lbw, float zeta, float k)
@@ -30,6 +36,7 @@ void Tracking_2nd_DLL_filter::calculate_lopp_coef(float* tau1, float* tau2, floa
     const float Wn = lbw * 8.0F * zeta / (4.0F * zeta * zeta + 1.0F);
     // solve for t1 & t2
     *tau1 = k / (Wn * Wn);
+    //*tau1 = k / (Wn * Wn) / 740.0;  // 让积分项系数增大 740 倍
     *tau2 = 2.0F * zeta / Wn;
 }
 
@@ -52,7 +59,20 @@ void Tracking_2nd_DLL_filter::initialize()
 
 float Tracking_2nd_DLL_filter::get_code_nco(float DLL_discriminator)
 {
-    float code_nco = d_old_code_nco + (d_tau2_code / d_tau1_code) * (DLL_discriminator - d_old_code_error) + (DLL_discriminator + d_old_code_error) * (d_pdi_code / (2.0F * d_tau1_code));
+    float prop_term = (d_tau2_code / d_tau1_code) * (DLL_discriminator - d_old_code_error);
+    float integ_term = (DLL_discriminator + d_old_code_error) * (d_pdi_code / (2.0F * d_tau1_code));
+    float code_nco = d_old_code_nco + prop_term + integ_term;
+#if GNSS_SDR_VERBOSE_DEBUG
+    static int dll_dbg = 0;
+    if (++dll_dbg % 1000 == 0)
+    {
+        if (GNSS_SDR_VERBOSE_DEBUG) std::cout << "[DLL-NCO] DLL_discriminator=" << DLL_discriminator
+                  << " prop_term=" << prop_term
+                  << " integ_term=" << integ_term
+                  << " code_nco=" << code_nco
+                  << std::endl;
+    }
+#endif
     d_old_code_nco = code_nco;
     d_old_code_error = DLL_discriminator;  // [chips]
     return code_nco;

@@ -71,6 +71,37 @@ GpsL1CaDllPllTrackingGPU::GpsL1CaDllPllTrackingGPU(
     dump_filename = configuration->property(role + ".dump_filename", default_dump_filename);
     vector_length = std::round(fs_in / (GPS_L1_CA_CODE_RATE_CPS / GPS_L1_CA_CODE_LENGTH_CHIPS));
 
+    // ============================================================
+    // 锁定判据参数：默认值取命令行 flag，可由 conf 里 Tracking_1C.* 覆盖
+    // （与 CPU 版 Dll_Pll_Conf 的口径一致；注意 conf 优先于 flag）
+    // ============================================================
+#if USE_GLOG_AND_GFLAGS
+    Gps_L1_Ca_Dll_Pll_Tracking_GPU_cc::Lock_Config lock_cfg;
+    lock_cfg.carrier_lock_th = FLAGS_carrier_lock_th;
+    lock_cfg.cn0_min = FLAGS_cn0_min;
+    lock_cfg.cn0_samples = FLAGS_cn0_samples;
+    lock_cfg.max_code_lock_fail = FLAGS_max_lock_fail;
+    lock_cfg.max_carrier_lock_fail = FLAGS_max_carrier_lock_fail;
+#else
+    Gps_L1_Ca_Dll_Pll_Tracking_GPU_cc::Lock_Config lock_cfg;
+    lock_cfg.carrier_lock_th = absl::GetFlag(FLAGS_carrier_lock_th);
+    lock_cfg.cn0_min = absl::GetFlag(FLAGS_cn0_min);
+    lock_cfg.cn0_samples = absl::GetFlag(FLAGS_cn0_samples);
+    lock_cfg.max_code_lock_fail = absl::GetFlag(FLAGS_max_lock_fail);
+    lock_cfg.max_carrier_lock_fail = absl::GetFlag(FLAGS_max_carrier_lock_fail);
+#endif
+    lock_cfg.carrier_lock_th = configuration->property(role + ".carrier_lock_th", lock_cfg.carrier_lock_th);
+    lock_cfg.cn0_min = configuration->property(role + ".cn0_min", lock_cfg.cn0_min);
+    lock_cfg.cn0_samples = configuration->property(role + ".cn0_samples", lock_cfg.cn0_samples);
+    lock_cfg.max_code_lock_fail = configuration->property(role + ".max_lock_fail", lock_cfg.max_code_lock_fail);
+    lock_cfg.max_carrier_lock_fail = configuration->property(role + ".max_carrier_lock_fail", lock_cfg.max_carrier_lock_fail);
+    lock_cfg.cn0_smoother_alpha = configuration->property(role + ".cn0_smoother_alpha", lock_cfg.cn0_smoother_alpha);
+    lock_cfg.carrier_lock_smoother_alpha = configuration->property(role + ".carrier_lock_test_smoother_alpha", lock_cfg.carrier_lock_smoother_alpha);
+    lock_cfg.cn0_smoother_samples = configuration->property(role + ".cn0_smoother_samples", lock_cfg.cn0_smoother_samples);
+    lock_cfg.carrier_lock_smoother_samples = configuration->property(role + ".carrier_lock_test_smoother_samples", lock_cfg.carrier_lock_smoother_samples);
+    lock_cfg.pull_in_time_s = configuration->property(role + ".pull_in_time_s", lock_cfg.pull_in_time_s);
+    lock_cfg.bit_sync_time_limit_s = configuration->property(role + ".bit_synchronization_time_limit_s", lock_cfg.bit_sync_time_limit_s);
+
     // ################# MAKE TRACKING GNURadio object ###################
     if (item_type.compare("gr_complex") == 0)
         {
@@ -88,6 +119,10 @@ GpsL1CaDllPllTrackingGPU::GpsL1CaDllPllTrackingGPU(
         {
             item_size_ = 0;
             LOG(WARNING) << item_type << " unknown tracking item type.";
+        }
+    if (item_size_ != 0)
+        {
+            tracking_->set_lock_config(lock_cfg);
         }
     channel_ = 0;
     DLOG(INFO) << "tracking(" << tracking_->unique_id() << ")";

@@ -1,0 +1,7 @@
+cd gnss-sdr
+mkdir build && cd build
+cmake .. -DENABLE_CUDA=ON
+make
+sudo make install
+
+

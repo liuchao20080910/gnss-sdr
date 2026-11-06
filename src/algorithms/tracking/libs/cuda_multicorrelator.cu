@@ -47,6 +47,7 @@ __global__ void Doppler_wipeoff_kernel(
          i += blockDim.x * gridDim.x)
         {
             __sincosf(rem_carrier_phase_in_rad + i * phase_step_rad, &sin, &cos);
+            //sincosf(rem_carrier_phase_in_rad + i * phase_step_rad, &sin, &cos);
             d_sig_wiped[i] = d_sig_in[i] * GPU_Complex(cos, -sin);
         }
 }
@@ -109,7 +110,7 @@ __global__ void Doppler_wippe_scalarProdGPUCPXxN_shifts_chips(
                         }
                     accumResult[iAccum] = sum;
                 }
-
+            //__syncthreads();  // ← 加这一行
             ////////////////////////////////////////////////////////////////////////
             // Perform tree-like reduction of accumulators' results.
             // ACCUM_N has to be power of two at this stage

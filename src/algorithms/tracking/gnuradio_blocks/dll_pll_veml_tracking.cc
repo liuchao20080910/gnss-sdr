@@ -93,7 +93,14 @@
 namespace wht = boost;
 #else
 #include <any>
+
+
 namespace wht = std;
+#endif
+
+// 调试打印总开关：0 = 关闭（生产默认，编译器会把整段消掉）；1 = 打开
+#ifndef GNSS_SDR_VERBOSE_DEBUG
+#define GNSS_SDR_VERBOSE_DEBUG 0
 #endif
 
 dll_pll_veml_tracking_sptr dll_pll_veml_make_tracking(const Dll_Pll_Conf &conf_)
@@ -858,6 +865,9 @@ void dll_pll_veml_tracking::forecast(int noutput_items,
 
 void dll_pll_veml_tracking::msg_handler_telemetry_to_trk(const pmt::pmt_t &msg)
 {
+    #if GNSS_SDR_VERBOSE_DEBUG
+    std::cout << "[CPU-TOW-MSG] ch=" << d_channel << " callback called" << std::endl;
+    #endif
     try
         {
             if (pmt::any_ref(msg).type().hash_code() == d_int_type_hash_code)
@@ -1367,6 +1377,23 @@ bool dll_pll_veml_tracking::cn0_and_tracking_lock_status(double coh_integration_
     d_CN0_SNV_dB_Hz = d_cn0_smoother.smooth(d_CN0_SNV_dB_Hz_raw);
     // Carrier lock indicator
     d_carrier_lock_test = d_carrier_lock_test_smoother.smooth(carrier_lock_detector(&d_P_accu, 1));
+
+#if GNSS_SDR_VERBOSE_DEBUG
+    // ============================================================
+    // 诊断：CPU 版载波锁定检测
+    // ============================================================
+    static int cpu_lock_dbg = 0;
+    if (++cpu_lock_dbg % 1000 == 0)
+    {
+        if (GNSS_SDR_VERBOSE_DEBUG) std::cout << "[LOCK-DBG] ch=" << d_channel
+                  << " lock_test=" << d_carrier_lock_test
+                  << " lock_thr=" << d_carrier_lock_threshold
+                  << " CN0=" << d_CN0_SNV_dB_Hz
+                  << " cn0_min=" << d_trk_parameters.cn0_min
+                  << " fail_counter=" << d_carrier_lock_fail_counter
+                  << std::endl;
+    }
+#endif
     // Loss of lock detection
     if (!d_pull_in_transitory)
         {
@@ -1451,12 +1478,39 @@ void dll_pll_veml_tracking::run_dll_pll()
         {
             // Costas loop discriminator, insensitive to 180 deg phase transitions
             d_carr_phase_error_hz = pll_cloop_two_quadrant_atan(d_P_accu) / TWO_PI;
+            #if GNSS_SDR_VERBOSE_DEBUG
+            static int cpu_p_dbg = 0;
+            if (++cpu_p_dbg % 1000 == 0)
+            {
+                std::cout << "[CPU-P] ch=" << d_channel
+                        << " P_real=" << d_P_accu.real()
+                        << " P_imag=" << d_P_accu.imag()
+                        << std::endl;
+            }
+            #endif
         }
     else
         {
             // Secondary code acquired. No symbols transition should be present in the signal
             d_carr_phase_error_hz = pll_four_quadrant_atan(d_P_accu) / TWO_PI;
         }
+
+#if GNSS_SDR_VERBOSE_DEBUG
+    // ============================================================
+    // 诊断：CPU 版 Prompt 相关值
+    // ============================================================
+    static int cpu_prompt_dbg = 0;
+    if (++cpu_prompt_dbg % 1000 == 0)
+    {
+        if (GNSS_SDR_VERBOSE_DEBUG) std::cout << "[PROMPT-DBG] ch=" << d_channel
+                  << " P_real=" << d_P_accu.real()
+                  << " P_imag=" << d_P_accu.imag()
+                  << " P_mag=" << std::abs(d_P_accu)
+                  << " P_phase=" << std::arg(d_P_accu)
+                  << " carr_err=" << d_carr_phase_error_hz
+                  << std::endl;
+    }
+#endif
 
     if ((d_pull_in_transitory == true && d_trk_parameters.enable_fll_pull_in == true) || d_trk_parameters.enable_fll_steady_state)
         {
@@ -1483,6 +1537,20 @@ void dll_pll_veml_tracking::run_dll_pll()
             // Carrier discriminator filter
             d_carr_error_filt_hz = d_carrier_loop_filter.get_carrier_error(0, static_cast<float>(d_carr_phase_error_hz), static_cast<float>(d_current_correlation_time_s));
         }
+#if GNSS_SDR_VERBOSE_DEBUG
+    // ============================================================
+    // 诊断：CPU 版 PLL 鉴相器输出
+    // ============================================================
+    static int cpu_pll_dbg = 0;
+    if (++cpu_pll_dbg % 1000 == 0)
+    {
+        std::cout << "[CPU-PLL] ch=" << d_channel
+                  << " carr_err=" << d_carr_phase_error_hz
+                  << " doppler=" << d_carrier_doppler_hz
+                  << " P_mag=" << std::abs(d_P_accu)
+                  << std::endl;
+    }
+#endif
 
     // New carrier Doppler frequency estimation
     d_carrier_doppler_hz = d_carr_error_filt_hz;
@@ -2424,6 +2492,16 @@ int dll_pll_veml_tracking::general_work(int noutput_items __attribute__((unused)
                     {
                         begin_wide_tracking(this->nitems_read(0));
                     }
+
+#if GNSS_SDR_VERBOSE_DEBUG
+                std::cout << "[CPU-START] ch=" << d_channel
+                          << " acq_code_phase_samples=" << d_acq_code_phase_samples
+                          << " samples_offset=" << samples_offset
+                          << " acq_sample_stamp=" << d_acq_sample_stamp
+                          << " nitems_read=" << this->nitems_read(0)
+                          << " prn_len=" << d_current_prn_length_samples
+                          << std::endl;
+#endif
                 // d_sample_counter += samples_offset;  // count for the processed samples
                 d_cn0_smoother.reset();
                 d_carrier_lock_test_smoother.reset();

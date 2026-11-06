@@ -1,0 +1,899 @@
+nvidia@nvidia-desktop:~/Workspace/GNSS/gnss-sdr$ ./gnss-sdr/build/src/main/gnss-sdr --config_file=./logs/fixcheck4/gpu.conf --log_dir=./logs/fixcheck4/gpu --carrier_lock_th=0.5 --max_lock_fail=200 > ./logs/fixcheck4/gpu_run.log 2>&1
+Initializing GNSS-SDR v0.0.22 ... Please wait.
+Reset CUDA device done.
+Logging will be written at /home/nvidia/Workspace/GNSS/gnss-sdr/logs/fixcheck4/gpu
+RF Channels: 1
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+L2 Cache size= 2097152 
+maxThreadsPerBlock= 1024 
+maxGridSize= 2147483647 
+sharedMemPerBlock= 49152 
+asyncEngineCount= 2 
+multiProcessorCount= 8 
+Processing file /home/nvidia/Workspace/GNSS/gnss-sdr/GPS_L1C_samp26M_if4.092M_60S.bin, which contains 3135600000 samples (3135600000 bytes)
+GNSS signal recorded time to be processed: 60.25 [s]
+Current receiver time: 1 s
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 04 (Block III)
+Tracking of GPS L1 C/A signal started on channel 4 for satellite GPS PRN 05 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 5 for satellite GPS PRN 06 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 08 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 09 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 9 for satellite GPS PRN 10 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 10 for satellite GPS PRN 11 (Block III)
+Tracking of GPS L1 C/A signal started on channel 11 for satellite GPS PRN 12 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 13 for satellite GPS PRN 14 (Block III)
+Tracking of GPS L1 C/A signal started on channel 14 for satellite GPS PRN 15 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 16 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 17 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 18 (Block III)
+Tracking of GPS L1 C/A signal started on channel 18 for satellite GPS PRN 19 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 19 for satellite GPS PRN 20 (Block IIR)
+Current receiver time: 2 s
+Current receiver time: 3 s
+Current receiver time: 4 s
+GPU tracking bit synchronization locked in channel 4 for satellite GPS PRN 05 (Block IIR-M)
+GPU tracking bit synchronization locked in channel 10 for satellite GPS PRN 11 (Block III)
+GPU tracking bit synchronization locked in channel 19 for satellite GPS PRN 20 (Block IIR)
+GPU tracking bit synchronization locked in channel 18 for satellite GPS PRN 19 (Block IIR)
+Current receiver time: 5 s
+Current receiver time: 6 s
+Current receiver time: 7 s
+Current receiver time: 8 s
+Current receiver time: 9 s
+Loss of lock in channel 0 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.0357889, CN0: 28.7399 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Loss of lock in channel 1 (carrier_lock_fail: 5001, code_lock_fail: 12, lock_test: -0.0415852, CN0: 24.6898 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+Loss of lock in channel 2 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.0529898, CN0: 29.8249 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Loss of lock in channel 3 (carrier_lock_fail: 5001, code_lock_fail: 12, lock_test: 0.17412, CN0: 26.019 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 04 (Block III)
+Loss of lock in channel 5 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.143691, CN0: 42.909 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 5 for satellite GPS PRN 06 (Block IIF)
+Loss of lock in channel 6 (carrier_lock_fail: 5001, code_lock_fail: 1, lock_test: -0.0136893, CN0: 26.4645 dB-Hz)
+Loss of lock in channel 7 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.243162, CN0: 25.9301 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Loss of lock in channel 8 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.0117934, CN0: 27.2038 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 21 (Block IIR)
+Loss of lock in channel 9 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.102815, CN0: 33.8154 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 22 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 9 for satellite GPS PRN 23 (Block III)
+Loss of lock in channel 11 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.0165104, CN0: 28.1819 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 11 for satellite GPS PRN 12 (Block IIR-M)
+Loss of lock in channel 12 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.00278111, CN0: 35.5078 dB-Hz)
+Loss of lock in channel 13 (carrier_lock_fail: 5001, code_lock_fail: 4, lock_test: 0.0406519, CN0: 24.2879 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 14 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.0578015, CN0: 26.7137 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 13 for satellite GPS PRN 24 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 14 for satellite GPS PRN 25 (Block IIF)
+Loss of lock in channel 15 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.214224, CN0: 30.1339 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 16 (Block IIR)
+Loss of lock in channel 16 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.0889441, CN0: 29.3601 dB-Hz)
+Loss of lock in channel 17 (carrier_lock_fail: 5001, code_lock_fail: 6, lock_test: -0.00875291, CN0: 24.7855 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 17 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 26 (Block IIF)
+Current receiver time: 10 s
+Current receiver time: 11 s
+Current receiver time: 12 s
+GPU tracking bit synchronization locked in channel 11 for satellite GPS PRN 12 (Block IIR-M)
+GPU tracking bit synchronization locked in channel 13 for satellite GPS PRN 24 (Block IIF)
+GPU tracking bit synchronization locked in channel 14 for satellite GPS PRN 25 (Block IIF)
+Current receiver time: 13 s
+New GPS NAV message received in channel 18: subframe 5 from satellite GPS PRN 19 (Block IIR) with CN0=44 dB-Hz
+New GPS NAV message received in channel 4: subframe 5 from satellite GPS PRN 05 (Block IIR-M) with CN0=44 dB-Hz
+New GPS NAV message received in channel 19: subframe 5 from satellite GPS PRN 20 (Block IIR) with CN0=44 dB-Hz
+New GPS NAV message received in channel 10: subframe 5 from satellite GPS PRN 11 (Block III) with CN0=44 dB-Hz
+Current receiver time: 14 s
+Current receiver time: 15 s
+Current receiver time: 16 s
+Current receiver time: 17 s
+Loss of lock in channel 0 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.0293119, CN0: 26.9554 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Loss of lock in channel 1 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.111345, CN0: 36.3098 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+Loss of lock in channel 2 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.189694, CN0: 33.4902 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Loss of lock in channel 3 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.145868, CN0: 25.279 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 04 (Block III)
+Loss of lock in channel 5 (carrier_lock_fail: 5001, code_lock_fail: 1, lock_test: -0.0741341, CN0: 24.3525 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 5 for satellite GPS PRN 06 (Block IIF)
+Loss of lock in channel 6 (carrier_lock_fail: 5001, code_lock_fail: 4, lock_test: -0.17452, CN0: 19.8939 dB-Hz)
+Loss of lock in channel 7 (carrier_lock_fail: 5001, code_lock_fail: 11, lock_test: 0.0767812, CN0: 23.7688 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 27 (Block IIF)
+Loss of lock in channel 8 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.0442533, CN0: 32.2291 dB-Hz)
+Loss of lock in channel 9 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.0842264, CN0: 32.9923 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 22 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 9 for satellite GPS PRN 28 (Block III)
+Loss of lock in channel 12 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.084585, CN0: 35.3712 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 15 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.164789, CN0: 29.8484 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 16 (Block IIR)
+Loss of lock in channel 16 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.0722829, CN0: 28.3963 dB-Hz)
+Loss of lock in channel 17 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.053996, CN0: 25.8151 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 17 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 29 (Block IIR-M)
+Current receiver time: 18 s
+Current receiver time: 19 s
+New GPS NAV message received in channel 11: subframe 1 from satellite GPS PRN 12 (Block IIR-M) with CN0=44 dB-Hz
+New GPS NAV message received in channel 10: subframe 1 from satellite GPS PRN 11 (Block III) with CN0=44 dB-Hz
+New GPS NAV message received in channel 14: subframe 1 from satellite GPS PRN 25 (Block IIF) with CN0=44 dB-Hz
+New GPS NAV message received in channel 19: subframe 1 from satellite GPS PRN 20 (Block IIR) with CN0=43 dB-Hz
+New GPS NAV message received in channel 13: subframe 1 from satellite GPS PRN 24 (Block IIF) with CN0=44 dB-Hz
+New GPS NAV message received in channel 18: subframe 1 from satellite GPS PRN 19 (Block IIR) with CN0=44 dB-Hz
+New GPS NAV message received in channel 4: subframe 1 from satellite GPS PRN 05 (Block IIR-M) with CN0=44 dB-Hz
+Current receiver time: 20 s
+GPU tracking bit synchronization locked in channel 9 for satellite GPS PRN 28 (Block III)
+Current receiver time: 21 s
+GPU tracking bit synchronization locked in channel 17 for satellite GPS PRN 29 (Block IIR-M)
+Current receiver time: 22 s
+Current receiver time: 23 s
+Current receiver time: 24 s
+Current receiver time: 25 s
+New GPS NAV message received in channel 10: subframe 2 from satellite GPS PRN 11 (Block III) with CN0=43 dB-Hz
+New GPS NAV message received in channel 19: subframe 2 from satellite GPS PRN 20 (Block IIR) with CN0=44 dB-Hz
+New GPS NAV message received in channel 14: subframe 2 from satellite GPS PRN 25 (Block IIF) with CN0=43 dB-Hz
+New GPS NAV message received in channel 18: subframe 2 from satellite GPS PRN 19 (Block IIR) with CN0=43 dB-Hz
+New GPS NAV message received in channel 4: subframe 2 from satellite GPS PRN 05 (Block IIR-M) with CN0=44 dB-Hz
+New GPS NAV message received in channel 11: subframe 2 from satellite GPS PRN 12 (Block IIR-M) with CN0=44 dB-Hz
+New GPS NAV message received in channel 13: subframe 2 from satellite GPS PRN 24 (Block IIF) with CN0=44 dB-Hz
+Loss of lock in channel 0 (carrier_lock_fail: 5001, code_lock_fail: 24, lock_test: -0.0281898, CN0: 26.9907 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Loss of lock in channel 1 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.135713, CN0: 27.6255 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+Loss of lock in channel 2 (carrier_lock_fail: 5001, code_lock_fail: 1, lock_test: 0.181781, CN0: 22.0805 dB-Hz)
+Loss of lock in channel 3 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.0992636, CN0: 32.0069 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 30 (Block IIF)
+Loss of lock in channel 5 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.0710884, CN0: 42.4287 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 5 for satellite GPS PRN 06 (Block IIF)
+Loss of lock in channel 6 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.108569, CN0: 27.7763 dB-Hz)
+Loss of lock in channel 7 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.148305, CN0: 27.6497 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Loss of lock in channel 8 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.176374, CN0: 30.4055 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 31 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 32 (Block IIF)
+Loss of lock in channel 12 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.0336295, CN0: 26.7361 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 15 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.0848883, CN0: 31.5056 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 16 (Block IIR)
+Loss of lock in channel 16 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.158463, CN0: 28.0465 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 17 (Block IIR-M)
+Current receiver time: 26 s
+Current receiver time: 27 s
+Current receiver time: 28 s
+GPU tracking bit synchronization locked in channel 5 for satellite GPS PRN 06 (Block IIF)
+Current receiver time: 29 s
+Current receiver time: 30 s
+Current receiver time: 31 s
+New GPS NAV message received in channel 10: subframe 3 from satellite GPS PRN 11 (Block III) with CN0=43 dB-Hz
+New GPS NAV message received in channel 14: subframe 3 from satellite GPS PRN 25 (Block IIF) with CN0=43 dB-Hz
+New GPS NAV message received in channel 19: subframe 3 from satellite GPS PRN 20 (Block IIR) with CN0=43 dB-Hz
+New GPS NAV message received in channel 13: subframe 3 from satellite GPS PRN 24 (Block IIF) with CN0=43 dB-Hz
+New GPS NAV message received in channel 17: subframe 3 from satellite GPS PRN 29 (Block IIR-M) with CN0=44 dB-Hz
+New GPS NAV message received in channel 4: subframe 3 from satellite GPS PRN 05 (Block IIR-M) with CN0=43 dB-Hz
+New GPS NAV message received in channel 18: subframe 3 from satellite GPS PRN 19 (Block IIR) with CN0=43 dB-Hz
+New GPS NAV message received in channel 9: subframe 3 from satellite GPS PRN 28 (Block III) with CN0=44 dB-Hz
+New GPS NAV message received in channel 11: subframe 3 from satellite GPS PRN 12 (Block IIR-M) with CN0=44 dB-Hz
+First position fix at 2024-Feb-22 00:00:30.140000 UTC is Lat = 37.3538 [deg], Long = -121.917 [deg], Height = 13.9389 [m], with GDOP = 5.27735
+Current receiver time: 32 s
+[1m[32mPosition at 2024-Feb-22 00:00:31.000000 UTC using 6 observations is Lat = 37.353771 [deg], Long = -121.916929 [deg], Height = 22.27 [m][0m
+[1m[32mVelocity: East: -4.67 [m/s], North: 2.30 [m/s], Up = 2.55 [m/s][0m
+Current receiver time: 33 s
+Loss of lock in channel 0 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.106955, CN0: 30.468163 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Loss of lock in channel 1 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.070491, CN0: 31.967449 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+[1m[32mPosition at 2024-Feb-22 00:00:32.000000 UTC using 6 observations is Lat = 37.353750 [deg], Long = -121.917039 [deg], Height = 41.02 [m][0m
+[1m[32mVelocity: East: -4.11 [m/s], North: 3.24 [m/s], Up = 0.73 [m/s][0m
+Loss of lock in channel 2 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.019953, CN0: 28.730255 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Loss of lock in channel 3 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.161160, CN0: 28.996832 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 30 (Block IIF)
+Loss of lock in channel 6 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.199204, CN0: 30.073246 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Loss of lock in channel 7 (carrier_lock_fail: 5001, code_lock_fail: 5, lock_test: -0.009505, CN0: 27.185328 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 31 (Block IIR-M)
+Loss of lock in channel 8 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.053494, CN0: 32.652702 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 32 (Block IIF)
+Loss of lock in channel 12 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.074224, CN0: 29.569298 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 15 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.135079, CN0: 25.674297 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 16 (Block IIR)
+Loss of lock in channel 16 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.136177, CN0: 31.699507 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 17 (Block IIR-M)
+Current receiver time: 34 s
+[1m[32mPosition at 2024-Feb-22 00:00:33.000000 UTC using 6 observations is Lat = 37.353894 [deg], Long = -121.916997 [deg], Height = 16.21 [m][0m
+[1m[32mVelocity: East: -2.76 [m/s], North: 4.16 [m/s], Up = -0.03 [m/s][0m
+Current receiver time: 35 s
+[1m[32mPosition at 2024-Feb-22 00:00:34.000000 UTC using 6 observations is Lat = 37.353854 [deg], Long = -121.917027 [deg], Height = 34.33 [m][0m
+[1m[32mVelocity: East: -2.90 [m/s], North: 4.65 [m/s], Up = -1.40 [m/s][0m
+Current receiver time: 36 s
+[1m[32mPosition at 2024-Feb-22 00:00:35.000000 UTC using 6 observations is Lat = 37.353871 [deg], Long = -121.917096 [deg], Height = 30.59 [m][0m
+[1m[32mVelocity: East: -3.99 [m/s], North: 3.45 [m/s], Up = 0.83 [m/s][0m
+Current receiver time: 37 s
+New GPS NAV message received in channel 10: subframe 4 from satellite GPS PRN 11 (Block III) with CN0=43.73 dB-Hz
+New GPS NAV message received in channel 14: subframe 4 from satellite GPS PRN 25 (Block IIF) with CN0=43.43 dB-Hz
+New GPS NAV message received in channel 19: subframe 4 from satellite GPS PRN 20 (Block IIR) with CN0=43.77 dB-Hz
+New GPS NAV message received in channel 5: subframe 4 from satellite GPS PRN 06 (Block IIF) with CN0=43.63 dB-Hz
+New GPS NAV message received in channel 17: subframe 4 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.78 dB-Hz
+New GPS NAV message received in channel 18: subframe 4 from satellite GPS PRN 19 (Block IIR) with CN0=43.63 dB-Hz
+New GPS NAV message received in channel 4: subframe 4 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.73 dB-Hz
+New GPS NAV message received in channel 9: subframe 4 from satellite GPS PRN 28 (Block III) with CN0=43.89 dB-Hz
+New GPS NAV message received in channel 13: subframe 4 from satellite GPS PRN 24 (Block IIF) with CN0=43.77 dB-Hz
+New GPS NAV message received in channel 11: subframe 4 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.90 dB-Hz
+[1m[32mPosition at 2024-Feb-22 00:00:36.000000 UTC using 6 observations is Lat = 37.353960 [deg], Long = -121.917128 [deg], Height = 25.35 [m][0m
+[1m[32mVelocity: East: -3.77 [m/s], North: 3.27 [m/s], Up = 0.97 [m/s][0m
+Current receiver time: 38 s
+[1m[32mPosition at 2024-Feb-22 00:00:37.000000 UTC using 6 observations is Lat = 37.354041 [deg], Long = -121.917129 [deg], Height = 15.06 [m][0m
+[1m[32mVelocity: East: -2.80 [m/s], North: 4.39 [m/s], Up = -1.35 [m/s][0m
+Current receiver time: 39 s
+[1m[32mPosition at 2024-Feb-22 00:00:38.000000 UTC using 6 observations is Lat = 37.354048 [deg], Long = -121.917185 [deg], Height = 21.18 [m][0m
+[1m[32mVelocity: East: -2.79 [m/s], North: 4.76 [m/s], Up = -1.43 [m/s][0m
+Current receiver time: 40 s
+[1m[32mPosition at 2024-Feb-22 00:00:39.000000 UTC using 6 observations is Lat = 37.353997 [deg], Long = -121.917188 [deg], Height = 42.02 [m][0m
+[1m[32mVelocity: East: -2.85 [m/s], North: 4.40 [m/s], Up = -1.42 [m/s][0m
+Current receiver time: 41 s
+Loss of lock in channel 0 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.066611, CN0: 27.145220 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Loss of lock in channel 1 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.004715, CN0: 28.819149 dB-Hz)
+[1m[32mPosition at 2024-Feb-22 00:00:40.000000 UTC using 6 observations is Lat = 37.354171 [deg], Long = -121.917175 [deg], Height = 16.49 [m][0m
+[1m[32mVelocity: East: -3.98 [m/s], North: 3.04 [m/s], Up = 1.68 [m/s][0m
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+Loss of lock in channel 2 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.112300, CN0: 28.883986 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Loss of lock in channel 3 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.296915, CN0: 27.948551 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 30 (Block IIF)
+Loss of lock in channel 6 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.090080, CN0: 28.661270 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Loss of lock in channel 7 (carrier_lock_fail: 5001, code_lock_fail: 1, lock_test: 0.090445, CN0: 25.030771 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 31 (Block IIR-M)
+Loss of lock in channel 8 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.042742, CN0: 29.070875 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 32 (Block IIF)
+Loss of lock in channel 12 (carrier_lock_fail: 5001, code_lock_fail: 1, lock_test: -0.026197, CN0: 23.137817 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 15 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.111745, CN0: 29.302574 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 16 (Block IIR)
+Loss of lock in channel 16 (carrier_lock_fail: 5001, code_lock_fail: 13, lock_test: -0.105298, CN0: 22.506935 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 17 (Block IIR-M)
+Current receiver time: 42 s
+[1m[32mPosition at 2024-Feb-22 00:00:41.000000 UTC using 6 observations is Lat = 37.354185 [deg], Long = -121.917250 [deg], Height = 11.14 [m][0m
+[1m[32mVelocity: East: -3.02 [m/s], North: 3.00 [m/s], Up = 1.74 [m/s][0m
+Current receiver time: 43 s
+New GPS NAV message received in channel 11: subframe 5 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.36 dB-Hz
+New GPS NAV message received in channel 14: subframe 5 from satellite GPS PRN 25 (Block IIF) with CN0=43.50 dB-Hz
+New GPS NAV message received in channel 19: subframe 5 from satellite GPS PRN 20 (Block IIR) with CN0=44.24 dB-Hz
+New GPS NAV message received in channel 5: subframe 5 from satellite GPS PRN 06 (Block IIF) with CN0=43.65 dB-Hz
+New GPS NAV message received in channel 17: subframe 5 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.40 dB-Hz
+New GPS NAV message received in channel 13: subframe 5 from satellite GPS PRN 24 (Block IIF) with CN0=43.56 dB-Hz
+New GPS NAV message received in channel 18: subframe 5 from satellite GPS PRN 19 (Block IIR) with CN0=43.51 dB-Hz
+New GPS NAV message received in channel 9: subframe 5 from satellite GPS PRN 28 (Block III) with CN0=44.04 dB-Hz
+New GPS NAV message received in channel 4: subframe 5 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.36 dB-Hz
+New GPS NAV message received in channel 10: subframe 5 from satellite GPS PRN 11 (Block III) with CN0=43.70 dB-Hz
+[1m[32mPosition at 2024-Feb-22 00:00:42.000000 UTC using 6 observations is Lat = 37.354179 [deg], Long = -121.917349 [deg], Height = 20.53 [m][0m
+[1m[32mVelocity: East: -2.80 [m/s], North: 4.17 [m/s], Up = -0.63 [m/s][0m
+Current receiver time: 44 s
+[1m[32mPosition at 2024-Feb-22 00:00:43.000000 UTC using 6 observations is Lat = 37.354116 [deg], Long = -121.917426 [deg], Height = 48.52 [m][0m
+[1m[32mVelocity: East: -3.81 [m/s], North: 3.32 [m/s], Up = 0.48 [m/s][0m
+Current receiver time: 45 s
+[1m[32mPosition at 2024-Feb-22 00:00:44.000000 UTC using 6 observations is Lat = 37.354254 [deg], Long = -121.917366 [deg], Height = 22.21 [m][0m
+[1m[32mVelocity: East: -2.73 [m/s], North: 3.36 [m/s], Up = -0.37 [m/s][0m
+Current receiver time: 46 s
+[1m[32mPosition at 2024-Feb-22 00:00:45.000000 UTC using 6 observations is Lat = 37.354168 [deg], Long = -121.917491 [deg], Height = 47.74 [m][0m
+[1m[32mVelocity: East: -2.88 [m/s], North: 3.27 [m/s], Up = -0.00 [m/s][0m
+Current receiver time: 47 s
+[1m[32mPosition at 2024-Feb-22 00:00:46.000000 UTC using 6 observations is Lat = 37.354201 [deg], Long = -121.917632 [deg], Height = 50.86 [m][0m
+[1m[32mVelocity: East: -2.42 [m/s], North: 4.10 [m/s], Up = -0.81 [m/s][0m
+Current receiver time: 48 s
+[1m[32mPosition at 2024-Feb-22 00:00:47.000000 UTC using 6 observations is Lat = 37.354314 [deg], Long = -121.917536 [deg], Height = 25.37 [m][0m
+[1m[32mVelocity: East: -3.39 [m/s], North: 2.75 [m/s], Up = 2.31 [m/s][0m
+Current receiver time: 49 s
+New GPS NAV message received in channel 10: subframe 1 from satellite GPS PRN 11 (Block III) with CN0=43.81 dB-Hz
+New GPS NAV message received in channel 19: subframe 1 from satellite GPS PRN 20 (Block IIR) with CN0=43.58 dB-Hz
+New GPS NAV message received in channel 14: subframe 1 from satellite GPS PRN 25 (Block IIF) with CN0=43.94 dB-Hz
+New GPS NAV message received in channel 11: subframe 1 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.68 dB-Hz
+New GPS NAV message received in channel 13: subframe 1 from satellite GPS PRN 24 (Block IIF) with CN0=43.36 dB-Hz
+New GPS NAV message received in channel 18: subframe 1 from satellite GPS PRN 19 (Block IIR) with CN0=43.70 dB-Hz
+New GPS NAV message received in channel 4: subframe 1 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.67 dB-Hz
+New GPS NAV message received in channel 9: subframe 1 from satellite GPS PRN 28 (Block III) with CN0=43.83 dB-Hz
+New GPS NAV message received in channel 5: subframe 1 from satellite GPS PRN 06 (Block IIF) with CN0=44.03 dB-Hz
+New GPS NAV message received in channel 17: subframe 1 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.37 dB-Hz
+Loss of lock in channel 0 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.142005, CN0: 30.526997 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+[1m[32mPosition at 2024-Feb-22 00:00:48.000000 UTC using 6 observations is Lat = 37.354371 [deg], Long = -121.917521 [deg], Height = 27.97 [m][0m
+[1m[32mVelocity: East: -3.96 [m/s], North: 3.32 [m/s], Up = 0.85 [m/s][0m
+Loss of lock in channel 1 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.074179, CN0: 26.371700 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+Loss of lock in channel 2 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.117440, CN0: 30.072678 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Loss of lock in channel 3 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.125988, CN0: 35.548096 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 30 (Block IIF)
+Loss of lock in channel 6 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.184112, CN0: 25.878828 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Loss of lock in channel 7 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.033349, CN0: 27.595282 dB-Hz)
+Loss of lock in channel 8 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.029323, CN0: 34.001575 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 31 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 08 (Block IIF)
+Loss of lock in channel 12 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.047639, CN0: 34.593971 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 15 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.216813, CN0: 26.403353 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 16 (Block IIR)
+Loss of lock in channel 16 (carrier_lock_fail: 5001, code_lock_fail: 9, lock_test: 0.093504, CN0: 23.723604 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 17 (Block IIR-M)
+Current receiver time: 50 s
+[1m[32mPosition at 2024-Feb-22 00:00:49.000000 UTC using 6 observations is Lat = 37.354383 [deg], Long = -121.917589 [deg], Height = 35.87 [m][0m
+[1m[32mVelocity: East: -2.69 [m/s], North: 4.07 [m/s], Up = -0.52 [m/s][0m
+Current receiver time: 51 s
+[1m[32mPosition at 2024-Feb-22 00:00:50.000000 UTC using 6 observations is Lat = 37.354579 [deg], Long = -121.917528 [deg], Height = 4.59 [m][0m
+[1m[32mVelocity: East: -2.74 [m/s], North: 4.65 [m/s], Up = -1.13 [m/s][0m
+Current receiver time: 52 s
+[1m[32mPosition at 2024-Feb-22 00:00:51.000000 UTC using 6 observations is Lat = 37.354530 [deg], Long = -121.917610 [deg], Height = 22.65 [m][0m
+[1m[32mVelocity: East: -3.71 [m/s], North: 3.54 [m/s], Up = 0.78 [m/s][0m
+Current receiver time: 53 s
+[1m[32mPosition at 2024-Feb-22 00:00:52.000000 UTC using 6 observations is Lat = 37.354559 [deg], Long = -121.917650 [deg], Height = 12.79 [m][0m
+[1m[32mVelocity: East: -2.01 [m/s], North: 5.95 [m/s], Up = -4.21 [m/s][0m
+Current receiver time: 54 s
+[1m[32mPosition at 2024-Feb-22 00:00:53.000000 UTC using 6 observations is Lat = 37.354488 [deg], Long = -121.917728 [deg], Height = 38.74 [m][0m
+[1m[32mVelocity: East: -3.87 [m/s], North: 3.32 [m/s], Up = 0.59 [m/s][0m
+Current receiver time: 55 s
+New GPS NAV message received in channel 10: subframe 2 from satellite GPS PRN 11 (Block III) with CN0=43.88 dB-Hz
+New GPS NAV message received in channel 11: subframe 2 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.91 dB-Hz
+New GPS NAV message received in channel 19: subframe 2 from satellite GPS PRN 20 (Block IIR) with CN0=43.71 dB-Hz
+New GPS NAV message received in channel 14: subframe 2 from satellite GPS PRN 25 (Block IIF) with CN0=43.68 dB-Hz
+New GPS NAV message received in channel 13: subframe 2 from satellite GPS PRN 24 (Block IIF) with CN0=43.43 dB-Hz
+New GPS NAV message received in channel 4: subframe 2 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.22 dB-Hz
+New GPS NAV message received in channel 17: subframe 2 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.61 dB-Hz
+New GPS NAV message received in channel 18: subframe 2 from satellite GPS PRN 19 (Block IIR) with CN0=43.69 dB-Hz
+New GPS NAV message received in channel 9: subframe 2 from satellite GPS PRN 28 (Block III) with CN0=43.92 dB-Hz
+New GPS NAV message received in channel 5: subframe 2 from satellite GPS PRN 06 (Block IIF) with CN0=44.04 dB-Hz
+[1m[32mPosition at 2024-Feb-22 00:00:54.000000 UTC using 7 observations is Lat = 37.354587 [deg], Long = -121.917711 [deg], Height = 28.52 [m][0m
+[1m[32mVelocity: East: -3.37 [m/s], North: 3.36 [m/s], Up = 0.67 [m/s][0m
+Current receiver time: 56 s
+[1m[32mPosition at 2024-Feb-22 00:00:55.000000 UTC using 7 observations is Lat = 37.354613 [deg], Long = -121.917809 [deg], Height = 32.79 [m][0m
+[1m[32mVelocity: East: -2.92 [m/s], North: 3.84 [m/s], Up = -1.32 [m/s][0m
+Current receiver time: 57 s
+Loss of lock in channel 0 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.070653, CN0: 29.110727 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+[1m[32mPosition at 2024-Feb-22 00:00:56.000000 UTC using 7 observations is Lat = 37.354677 [deg], Long = -121.917814 [deg], Height = 18.70 [m][0m
+[1m[32mVelocity: East: -1.97 [m/s], North: 5.51 [m/s], Up = -3.01 [m/s][0m
+Loss of lock in channel 1 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.027500, CN0: 28.685335 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+Loss of lock in channel 2 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.021075, CN0: 32.405273 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Loss of lock in channel 3 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.195205, CN0: 30.196476 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 30 (Block IIF)
+Loss of lock in channel 6 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.002570, CN0: 27.227966 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Loss of lock in channel 7 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.024288, CN0: 32.955585 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 31 (Block IIR-M)
+Loss of lock in channel 8 (carrier_lock_fail: 5001, code_lock_fail: 2, lock_test: -0.113168, CN0: 21.134008 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 08 (Block IIF)
+Loss of lock in channel 12 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: -0.028386, CN0: 34.468643 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 15 (carrier_lock_fail: 5001, code_lock_fail: 0, lock_test: 0.124044, CN0: 32.865517 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 16 (Block IIR)
+Loss of lock in channel 16 (carrier_lock_fail: 5001, code_lock_fail: 1, lock_test: -0.033548, CN0: 22.071432 dB-Hz)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 17 (Block IIR-M)
+Current receiver time: 58 s
+[1m[32mPosition at 2024-Feb-22 00:00:57.000000 UTC using 7 observations is Lat = 37.354722 [deg], Long = -121.917830 [deg], Height = 25.75 [m][0m
+[1m[32mVelocity: East: -2.56 [m/s], North: 4.77 [m/s], Up = -3.25 [m/s][0m
+Current receiver time: 59 s
+[1m[32mPosition at 2024-Feb-22 00:00:58.000000 UTC using 7 observations is Lat = 37.354691 [deg], Long = -121.917923 [deg], Height = 29.08 [m][0m
+[1m[32mVelocity: East: -4.15 [m/s], North: 3.16 [m/s], Up = 0.64 [m/s][0m
+Current receiver time: 1 min 0 s
+[1m[32mPosition at 2024-Feb-22 00:00:59.000000 UTC using 7 observations is Lat = 37.354693 [deg], Long = -121.918013 [deg], Height = 37.90 [m][0m
+[1m[32mVelocity: East: -3.18 [m/s], North: 4.12 [m/s], Up = -0.39 [m/s][0m
+Current receiver time: 1 min 1 s
+New GPS NAV message received in channel 14: subframe 3 from satellite GPS PRN 25 (Block IIF) with CN0=43.17 dB-Hz
+New GPS NAV message received in channel 11: subframe 3 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.38 dB-Hz
+New GPS NAV message received in channel 19: subframe 3 from satellite GPS PRN 20 (Block IIR) with CN0=43.89 dB-Hz
+New GPS NAV message received in channel 10: subframe 3 from satellite GPS PRN 11 (Block III) with CN0=43.98 dB-Hz
+New GPS NAV message received in channel 17: subframe 3 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.90 dB-Hz
+New GPS NAV message received in channel 4: subframe 3 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.82 dB-Hz
+New GPS NAV message received in channel 9: subframe 3 from satellite GPS PRN 28 (Block III) with CN0=44.08 dB-Hz
+New GPS NAV message received in channel 18: subframe 3 from satellite GPS PRN 19 (Block IIR) with CN0=43.96 dB-Hz
+New GPS NAV message received in channel 13: subframe 3 from satellite GPS PRN 24 (Block IIF) with CN0=43.46 dB-Hz
+New GPS NAV message received in channel 5: subframe 3 from satellite GPS PRN 06 (Block IIF) with CN0=43.42 dB-Hz
+Stopping GNSS-SDR, please wait!
+Generating .mat file for /home/nvidia/Workspace/GNSS/gnss-sdr/logs/fixcheck4/gpu/obs_dump.dat
+Generating .mat file for /home/nvidia/Workspace/GNSS/gnss-sdr/logs/fixcheck4/gpu/pvt_dump.dat
+Total GNSS-SDR run time: 124.099231 [seconds]
+GNSS-SDR program ended.
+
+
+nvidia@nvidia-desktop:~/Workspace/GNSS/gnss-sdr$ ./gnss-sdr/build/src/main/gnss-sdr --config_file=./logs/fixcheck4/cpu.conf --log_dir=./logs/fixcheck4/cpu --carrier_lock_th=0.5 --max_lock_fail=200 > ./logs/fixcheck4/cpu_run.log 2>&1
+Initializing GNSS-SDR v0.0.22 ... Please wait.
+Reset CUDA device done.
+Logging will be written at /home/nvidia/Workspace/GNSS/gnss-sdr/logs/fixcheck4/cpu
+RF Channels: 1
+Processing file /home/nvidia/Workspace/GNSS/gnss-sdr/GPS_L1C_samp26M_if4.092M_60S.bin, which contains 3135600000 samples (3135600000 bytes)
+GNSS signal recorded time to be processed: 60.25 [s]
+Current receiver time: 1 s
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 04 (Block III)
+Tracking of GPS L1 C/A signal started on channel 4 for satellite GPS PRN 05 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 5 for satellite GPS PRN 06 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 08 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 09 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 9 for satellite GPS PRN 10 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 10 for satellite GPS PRN 11 (Block III)
+Tracking of GPS L1 C/A signal started on channel 11 for satellite GPS PRN 12 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 13 for satellite GPS PRN 14 (Block III)
+Tracking of GPS L1 C/A signal started on channel 14 for satellite GPS PRN 15 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 16 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 17 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 18 (Block III)
+Tracking of GPS L1 C/A signal started on channel 18 for satellite GPS PRN 19 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 19 for satellite GPS PRN 20 (Block IIR)
+Current receiver time: 2 s
+Current receiver time: 3 s
+Current receiver time: 4 s
+Current receiver time: 5 s
+GPS L1 C/A histogram bit synchronization locked in channel 4 for satellite GPS PRN 05 (Block IIR-M)
+GPS L1 C/A histogram bit synchronization locked in channel 5 for satellite GPS PRN 06 (Block IIF)
+GPS L1 C/A histogram bit synchronization locked in channel 10 for satellite GPS PRN 11 (Block III)
+GPS L1 C/A histogram bit synchronization locked in channel 11 for satellite GPS PRN 12 (Block IIR-M)
+GPS L1 C/A histogram bit synchronization locked in channel 19 for satellite GPS PRN 20 (Block IIR)
+Current receiver time: 6 s
+Current receiver time: 7 s
+Current receiver time: 8 s
+Current receiver time: 9 s
+Loss of lock in channel 0, satellite GPS PRN 01 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Current receiver time: 10 s
+Loss of lock in channel 1, satellite GPS PRN 02 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+Loss of lock in channel 2, satellite GPS PRN 03 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Loss of lock in channel 3, satellite GPS PRN 04 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 04 (Block III)
+Loss of lock in channel 6, satellite GPS PRN 07 (Block IIR-M) !
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Loss of lock in channel 7, satellite GPS PRN 08 (Block IIF) !
+Loss of lock in channel 8, satellite GPS PRN 09 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 08 (Block IIF)
+Loss of lock in channel 9, satellite GPS PRN 10 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 21 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 9 for satellite GPS PRN 22 (Block IIR)
+Loss of lock in channel 12, satellite GPS PRN 13 (Block IIR) !
+Loss of lock in channel 13, satellite GPS PRN 14 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 13 for satellite GPS PRN 23 (Block III)
+Loss of lock in channel 14, satellite GPS PRN 15 (Block IIR-M) !
+Loss of lock in channel 15, satellite GPS PRN 16 (Block IIR) !
+Loss of lock in channel 16, satellite GPS PRN 17 (Block IIR-M) !
+Tracking of GPS L1 C/A signal started on channel 14 for satellite GPS PRN 15 (Block IIR-M)
+Loss of lock in channel 17, satellite GPS PRN 18 (Block III) !
+Loss of lock in channel 18, satellite GPS PRN 19 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 15 for satellite GPS PRN 24 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 25 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 26 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 18 for satellite GPS PRN 27 (Block IIF)
+Current receiver time: 11 s
+Current receiver time: 12 s
+Current receiver time: 13 s
+New GPS NAV message received in channel 11: subframe 5 from satellite GPS PRN 12 (Block IIR-M) with CN0=44 dB-Hz
+New GPS NAV message received in channel 10: subframe 5 from satellite GPS PRN 11 (Block III) with CN0=44 dB-Hz
+New GPS NAV message received in channel 19: subframe 5 from satellite GPS PRN 20 (Block IIR) with CN0=44 dB-Hz
+New GPS NAV message received in channel 5: subframe 5 from satellite GPS PRN 06 (Block IIF) with CN0=44 dB-Hz
+New GPS NAV message received in channel 4: subframe 5 from satellite GPS PRN 05 (Block IIR-M) with CN0=44 dB-Hz
+Current receiver time: 14 s
+Current receiver time: 15 s
+GPS L1 C/A histogram bit synchronization locked in channel 15 for satellite GPS PRN 24 (Block IIF)
+Current receiver time: 16 s
+Current receiver time: 17 s
+Current receiver time: 18 s
+Loss of lock in channel 0, satellite GPS PRN 01 (Block IIF) !
+Current receiver time: 19 s
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Loss of lock in channel 1, satellite GPS PRN 02 (Block IIR) !
+New GPS NAV message received in channel 11: subframe 1 from satellite GPS PRN 12 (Block IIR-M) with CN0=44 dB-Hz
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 02 (Block IIR)
+New GPS NAV message received in channel 10: subframe 1 from satellite GPS PRN 11 (Block III) with CN0=44 dB-Hz
+New GPS NAV message received in channel 19: subframe 1 from satellite GPS PRN 20 (Block IIR) with CN0=43 dB-Hz
+Loss of lock in channel 2, satellite GPS PRN 03 (Block IIF) !
+New GPS NAV message received in channel 5: subframe 1 from satellite GPS PRN 06 (Block IIF) with CN0=44 dB-Hz
+New GPS NAV message received in channel 4: subframe 1 from satellite GPS PRN 05 (Block IIR-M) with CN0=44 dB-Hz
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 03 (Block IIF)
+Loss of lock in channel 3, satellite GPS PRN 04 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 04 (Block III)
+Loss of lock in channel 6, satellite GPS PRN 07 (Block IIR-M) !
+Loss of lock in channel 7, satellite GPS PRN 08 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Tracking of GPS L1 C/A signal started on channel 7 for satellite GPS PRN 28 (Block III)
+Loss of lock in channel 8, satellite GPS PRN 21 (Block IIR) !
+Loss of lock in channel 9, satellite GPS PRN 22 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 21 (Block IIR)
+Tracking of GPS L1 C/A signal started on channel 9 for satellite GPS PRN 29 (Block IIR-M)
+Loss of lock in channel 12, satellite GPS PRN 13 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 13, satellite GPS PRN 23 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 13 for satellite GPS PRN 23 (Block III)
+Loss of lock in channel 14, satellite GPS PRN 15 (Block IIR-M) !
+Tracking of GPS L1 C/A signal started on channel 14 for satellite GPS PRN 15 (Block IIR-M)
+Loss of lock in channel 16, satellite GPS PRN 25 (Block IIF) !
+Loss of lock in channel 17, satellite GPS PRN 26 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 16 for satellite GPS PRN 25 (Block IIF)
+Loss of lock in channel 18, satellite GPS PRN 27 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 30 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 18 for satellite GPS PRN 31 (Block IIR-M)
+Current receiver time: 20 s
+Current receiver time: 21 s
+Current receiver time: 22 s
+Current receiver time: 23 s
+GPS L1 C/A histogram bit synchronization locked in channel 7 for satellite GPS PRN 28 (Block III)
+GPS L1 C/A histogram bit synchronization locked in channel 9 for satellite GPS PRN 29 (Block IIR-M)
+GPS L1 C/A histogram bit synchronization locked in channel 16 for satellite GPS PRN 25 (Block IIF)
+Current receiver time: 24 s
+Current receiver time: 25 s
+New GPS NAV message received in channel 11: subframe 2 from satellite GPS PRN 12 (Block IIR-M) with CN0=44 dB-Hz
+New GPS NAV message received in channel 10: subframe 2 from satellite GPS PRN 11 (Block III) with CN0=43 dB-Hz
+New GPS NAV message received in channel 19: subframe 2 from satellite GPS PRN 20 (Block IIR) with CN0=44 dB-Hz
+New GPS NAV message received in channel 5: subframe 2 from satellite GPS PRN 06 (Block IIF) with CN0=44 dB-Hz
+New GPS NAV message received in channel 15: subframe 2 from satellite GPS PRN 24 (Block IIF) with CN0=44 dB-Hz
+New GPS NAV message received in channel 4: subframe 2 from satellite GPS PRN 05 (Block IIR-M) with CN0=44 dB-Hz
+Current receiver time: 26 s
+Current receiver time: 27 s
+Loss of lock in channel 0, satellite GPS PRN 01 (Block IIF) !
+Current receiver time: 28 s
+Loss of lock in channel 1, satellite GPS PRN 02 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Loss of lock in channel 2, satellite GPS PRN 03 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 32 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 09 (Block IIF)
+Loss of lock in channel 3, satellite GPS PRN 04 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 04 (Block III)
+Loss of lock in channel 6, satellite GPS PRN 07 (Block IIR-M) !
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+Loss of lock in channel 8, satellite GPS PRN 21 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 21 (Block IIR)
+Loss of lock in channel 12, satellite GPS PRN 13 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 13, satellite GPS PRN 23 (Block III) !
+Loss of lock in channel 14, satellite GPS PRN 15 (Block IIR-M) !
+Tracking of GPS L1 C/A signal started on channel 13 for satellite GPS PRN 23 (Block III)
+Tracking of GPS L1 C/A signal started on channel 14 for satellite GPS PRN 10 (Block IIF)
+Loss of lock in channel 17, satellite GPS PRN 30 (Block IIF) !
+Loss of lock in channel 18, satellite GPS PRN 31 (Block IIR-M) !
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 30 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 18 for satellite GPS PRN 14 (Block III)
+Current receiver time: 29 s
+Current receiver time: 30 s
+Current receiver time: 31 s
+New GPS NAV message received in channel 11: subframe 3 from satellite GPS PRN 12 (Block IIR-M) with CN0=44 dB-Hz
+New GPS NAV message received in channel 10: subframe 3 from satellite GPS PRN 11 (Block III) with CN0=43 dB-Hz
+New GPS NAV message received in channel 16: subframe 3 from satellite GPS PRN 25 (Block IIF) with CN0=43 dB-Hz
+New GPS NAV message received in channel 19: subframe 3 from satellite GPS PRN 20 (Block IIR) with CN0=43 dB-Hz
+New GPS NAV message received in channel 5: subframe 3 from satellite GPS PRN 06 (Block IIF) with CN0=44 dB-Hz
+New GPS NAV message received in channel 9: subframe 3 from satellite GPS PRN 29 (Block IIR-M) with CN0=44 dB-Hz
+New GPS NAV message received in channel 4: subframe 3 from satellite GPS PRN 05 (Block IIR-M) with CN0=43 dB-Hz
+New GPS NAV message received in channel 15: subframe 3 from satellite GPS PRN 24 (Block IIF) with CN0=43 dB-Hz
+New GPS NAV message received in channel 7: subframe 3 from satellite GPS PRN 28 (Block III) with CN0=44 dB-Hz
+First position fix at 2024-Feb-22 00:00:30.120000 UTC is Lat = 37.3538 [deg], Long = -121.917 [deg], Height = 22.2361 [m], with GDOP = 4.37611
+Current receiver time: 32 s
+[1m[32mPosition at 2024-Feb-22 00:00:31.000000 UTC using 5 observations is Lat = 37.353794 [deg], Long = -121.916838 [deg], Height = 27.50 [m][0m
+[1m[32mVelocity: East: -3.55 [m/s], North: 4.09 [m/s], Up = -0.07 [m/s][0m
+Current receiver time: 33 s
+[1m[32mPosition at 2024-Feb-22 00:00:32.000000 UTC using 5 observations is Lat = 37.353843 [deg], Long = -121.917017 [deg], Height = 24.08 [m][0m
+[1m[32mVelocity: East: -2.53 [m/s], North: 4.07 [m/s], Up = 0.24 [m/s][0m
+Current receiver time: 34 s
+[1m[32mPosition at 2024-Feb-22 00:00:33.000000 UTC using 5 observations is Lat = 37.353862 [deg], Long = -121.916997 [deg], Height = 24.11 [m][0m
+[1m[32mVelocity: East: -2.58 [m/s], North: 3.56 [m/s], Up = 1.13 [m/s][0m
+Current receiver time: 35 s
+[1m[32mPosition at 2024-Feb-22 00:00:34.000000 UTC using 5 observations is Lat = 37.353824 [deg], Long = -121.917024 [deg], Height = 37.70 [m][0m
+[1m[32mVelocity: East: -1.49 [m/s], North: 3.60 [m/s], Up = 1.33 [m/s][0m
+Current receiver time: 36 s
+[1m[32mPosition at 2024-Feb-22 00:00:35.000000 UTC using 5 observations is Lat = 37.353902 [deg], Long = -121.917011 [deg], Height = 28.29 [m][0m
+[1m[32mVelocity: East: -4.25 [m/s], North: 3.71 [m/s], Up = 0.43 [m/s][0m
+Loss of lock in channel 0, satellite GPS PRN 01 (Block IIF) !
+Current receiver time: 37 s
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Loss of lock in channel 1, satellite GPS PRN 32 (Block IIF) !
+New GPS NAV message received in channel 11: subframe 4 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.97 dB-Hz
+New GPS NAV message received in channel 10: subframe 4 from satellite GPS PRN 11 (Block III) with CN0=43.81 dB-Hz
+New GPS NAV message received in channel 16: subframe 4 from satellite GPS PRN 25 (Block IIF) with CN0=43.38 dB-Hz
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 32 (Block IIF)
+New GPS NAV message received in channel 19: subframe 4 from satellite GPS PRN 20 (Block IIR) with CN0=43.80 dB-Hz
+New GPS NAV message received in channel 5: subframe 4 from satellite GPS PRN 06 (Block IIF) with CN0=43.65 dB-Hz
+New GPS NAV message received in channel 9: subframe 4 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.82 dB-Hz
+New GPS NAV message received in channel 15: subframe 4 from satellite GPS PRN 24 (Block IIF) with CN0=43.86 dB-Hz
+New GPS NAV message received in channel 4: subframe 4 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.73 dB-Hz
+New GPS NAV message received in channel 7: subframe 4 from satellite GPS PRN 28 (Block III) with CN0=43.94 dB-Hz
+Loss of lock in channel 2, satellite GPS PRN 09 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 09 (Block IIF)
+Loss of lock in channel 3, satellite GPS PRN 04 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 04 (Block III)
+Loss of lock in channel 6, satellite GPS PRN 07 (Block IIR-M) !
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+[1m[32mPosition at 2024-Feb-22 00:00:36.000000 UTC using 5 observations is Lat = 37.353973 [deg], Long = -121.917136 [deg], Height = 21.54 [m][0m
+[1m[32mVelocity: East: -4.12 [m/s], North: 3.93 [m/s], Up = -0.44 [m/s][0m
+Loss of lock in channel 8, satellite GPS PRN 21 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 21 (Block IIR)
+Loss of lock in channel 12, satellite GPS PRN 13 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 13, satellite GPS PRN 23 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 13 for satellite GPS PRN 23 (Block III)
+Loss of lock in channel 14, satellite GPS PRN 10 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 14 for satellite GPS PRN 10 (Block IIF)
+Loss of lock in channel 17, satellite GPS PRN 30 (Block IIF) !
+Loss of lock in channel 18, satellite GPS PRN 14 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 30 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 18 for satellite GPS PRN 16 (Block IIR)
+Current receiver time: 38 s
+[1m[32mPosition at 2024-Feb-22 00:00:37.000000 UTC using 5 observations is Lat = 37.353967 [deg], Long = -121.917196 [deg], Height = 28.95 [m][0m
+[1m[32mVelocity: East: -3.69 [m/s], North: 4.12 [m/s], Up = -1.30 [m/s][0m
+Current receiver time: 39 s
+[1m[32mPosition at 2024-Feb-22 00:00:38.000000 UTC using 5 observations is Lat = 37.353977 [deg], Long = -121.917105 [deg], Height = 38.57 [m][0m
+[1m[32mVelocity: East: -2.31 [m/s], North: 3.61 [m/s], Up = 0.71 [m/s][0m
+Current receiver time: 40 s
+[1m[32mPosition at 2024-Feb-22 00:00:39.000000 UTC using 5 observations is Lat = 37.354054 [deg], Long = -121.917146 [deg], Height = 33.25 [m][0m
+[1m[32mVelocity: East: -3.91 [m/s], North: 3.94 [m/s], Up = -1.18 [m/s][0m
+Current receiver time: 41 s
+[1m[32mPosition at 2024-Feb-22 00:00:40.000000 UTC using 5 observations is Lat = 37.354102 [deg], Long = -121.917272 [deg], Height = 28.98 [m][0m
+[1m[32mVelocity: East: -3.88 [m/s], North: 3.21 [m/s], Up = 1.15 [m/s][0m
+Current receiver time: 42 s
+[1m[32mPosition at 2024-Feb-22 00:00:41.000000 UTC using 5 observations is Lat = 37.354098 [deg], Long = -121.917323 [deg], Height = 22.48 [m][0m
+[1m[32mVelocity: East: -3.54 [m/s], North: 3.79 [m/s], Up = 0.17 [m/s][0m
+Current receiver time: 43 s
+New GPS NAV message received in channel 10: subframe 5 from satellite GPS PRN 11 (Block III) with CN0=43.72 dB-Hz
+New GPS NAV message received in channel 11: subframe 5 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.42 dB-Hz
+New GPS NAV message received in channel 19: subframe 5 from satellite GPS PRN 20 (Block IIR) with CN0=44.25 dB-Hz
+New GPS NAV message received in channel 4: subframe 5 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.42 dB-Hz
+New GPS NAV message received in channel 5: subframe 5 from satellite GPS PRN 06 (Block IIF) with CN0=43.67 dB-Hz
+New GPS NAV message received in channel 16: subframe 5 from satellite GPS PRN 25 (Block IIF) with CN0=43.62 dB-Hz
+New GPS NAV message received in channel 9: subframe 5 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.47 dB-Hz
+New GPS NAV message received in channel 15: subframe 5 from satellite GPS PRN 24 (Block IIF) with CN0=43.61 dB-Hz
+New GPS NAV message received in channel 7: subframe 5 from satellite GPS PRN 28 (Block III) with CN0=44.10 dB-Hz
+[1m[32mPosition at 2024-Feb-22 00:00:42.000000 UTC using 5 observations is Lat = 37.354166 [deg], Long = -121.917315 [deg], Height = 27.46 [m][0m
+[1m[32mVelocity: East: -3.76 [m/s], North: 4.07 [m/s], Up = -1.12 [m/s][0m
+Current receiver time: 44 s
+[1m[32mPosition at 2024-Feb-22 00:00:43.000000 UTC using 5 observations is Lat = 37.354196 [deg], Long = -121.917384 [deg], Height = 32.16 [m][0m
+[1m[32mVelocity: East: -3.88 [m/s], North: 3.86 [m/s], Up = -0.35 [m/s][0m
+Current receiver time: 45 s
+[1m[32mPosition at 2024-Feb-22 00:00:44.000000 UTC using 5 observations is Lat = 37.354200 [deg], Long = -121.917282 [deg], Height = 35.97 [m][0m
+[1m[32mVelocity: East: -2.55 [m/s], North: 3.63 [m/s], Up = -0.60 [m/s][0m
+Loss of lock in channel 0, satellite GPS PRN 01 (Block IIF) !
+Current receiver time: 46 s
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+Loss of lock in channel 1, satellite GPS PRN 32 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 32 (Block IIF)
+Loss of lock in channel 2, satellite GPS PRN 09 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 09 (Block IIF)
+Loss of lock in channel 3, satellite GPS PRN 04 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 04 (Block III)
+Loss of lock in channel 6, satellite GPS PRN 07 (Block IIR-M) !
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+[1m[32mPosition at 2024-Feb-22 00:00:45.000000 UTC using 5 observations is Lat = 37.354255 [deg], Long = -121.917433 [deg], Height = 33.41 [m][0m
+[1m[32mVelocity: East: -3.34 [m/s], North: 3.88 [m/s], Up = -1.12 [m/s][0m
+Loss of lock in channel 8, satellite GPS PRN 21 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 21 (Block IIR)
+Loss of lock in channel 12, satellite GPS PRN 13 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 13, satellite GPS PRN 23 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 13 for satellite GPS PRN 23 (Block III)
+Loss of lock in channel 14, satellite GPS PRN 10 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 14 for satellite GPS PRN 10 (Block IIF)
+Loss of lock in channel 17, satellite GPS PRN 30 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 30 (Block IIF)
+Loss of lock in channel 18, satellite GPS PRN 16 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 18 for satellite GPS PRN 16 (Block IIR)
+Current receiver time: 47 s
+[1m[32mPosition at 2024-Feb-22 00:00:46.000000 UTC using 5 observations is Lat = 37.354305 [deg], Long = -121.917468 [deg], Height = 34.23 [m][0m
+[1m[32mVelocity: East: -3.57 [m/s], North: 3.55 [m/s], Up = -0.44 [m/s][0m
+Current receiver time: 48 s
+[1m[32mPosition at 2024-Feb-22 00:00:47.000000 UTC using 5 observations is Lat = 37.354314 [deg], Long = -121.917441 [deg], Height = 30.88 [m][0m
+[1m[32mVelocity: East: -2.80 [m/s], North: 4.90 [m/s], Up = -0.73 [m/s][0m
+Current receiver time: 49 s
+New GPS NAV message received in channel 11: subframe 1 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.84 dB-Hz
+New GPS NAV message received in channel 10: subframe 1 from satellite GPS PRN 11 (Block III) with CN0=43.88 dB-Hz
+New GPS NAV message received in channel 16: subframe 1 from satellite GPS PRN 25 (Block IIF) with CN0=43.92 dB-Hz
+New GPS NAV message received in channel 19: subframe 1 from satellite GPS PRN 20 (Block IIR) with CN0=43.61 dB-Hz
+New GPS NAV message received in channel 5: subframe 1 from satellite GPS PRN 06 (Block IIF) with CN0=44.04 dB-Hz
+New GPS NAV message received in channel 9: subframe 1 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.41 dB-Hz
+New GPS NAV message received in channel 15: subframe 1 from satellite GPS PRN 24 (Block IIF) with CN0=43.41 dB-Hz
+New GPS NAV message received in channel 4: subframe 1 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.74 dB-Hz
+New GPS NAV message received in channel 7: subframe 1 from satellite GPS PRN 28 (Block III) with CN0=43.83 dB-Hz
+[1m[32mPosition at 2024-Feb-22 00:00:48.000000 UTC using 6 observations is Lat = 37.354364 [deg], Long = -121.917522 [deg], Height = 31.70 [m][0m
+[1m[32mVelocity: East: -4.02 [m/s], North: 4.21 [m/s], Up = -0.62 [m/s][0m
+Current receiver time: 50 s
+[1m[32mPosition at 2024-Feb-22 00:00:49.000000 UTC using 6 observations is Lat = 37.354366 [deg], Long = -121.917577 [deg], Height = 37.68 [m][0m
+[1m[32mVelocity: East: -2.76 [m/s], North: 4.13 [m/s], Up = -0.55 [m/s][0m
+Current receiver time: 51 s
+[1m[32mPosition at 2024-Feb-22 00:00:50.000000 UTC using 6 observations is Lat = 37.354426 [deg], Long = -121.917561 [deg], Height = 30.00 [m][0m
+[1m[32mVelocity: East: -2.87 [m/s], North: 3.27 [m/s], Up = 1.12 [m/s][0m
+Current receiver time: 52 s
+[1m[32mPosition at 2024-Feb-22 00:00:51.000000 UTC using 6 observations is Lat = 37.354493 [deg], Long = -121.917656 [deg], Height = 27.41 [m][0m
+[1m[32mVelocity: East: -3.74 [m/s], North: 4.21 [m/s], Up = -0.29 [m/s][0m
+Current receiver time: 53 s
+[1m[32mPosition at 2024-Feb-22 00:00:52.000000 UTC using 6 observations is Lat = 37.354492 [deg], Long = -121.917670 [deg], Height = 26.70 [m][0m
+[1m[32mVelocity: East: -2.24 [m/s], North: 4.04 [m/s], Up = -0.92 [m/s][0m
+Current receiver time: 54 s
+[1m[32mPosition at 2024-Feb-22 00:00:53.000000 UTC using 6 observations is Lat = 37.354523 [deg], Long = -121.917732 [deg], Height = 33.72 [m][0m
+[1m[32mVelocity: East: -3.76 [m/s], North: 3.72 [m/s], Up = -0.06 [m/s][0m
+Current receiver time: 55 s
+Loss of lock in channel 0, satellite GPS PRN 01 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 0 for satellite GPS PRN 01 (Block IIF)
+New GPS NAV message received in channel 11: subframe 2 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.98 dB-Hz
+New GPS NAV message received in channel 16: subframe 2 from satellite GPS PRN 25 (Block IIF) with CN0=43.65 dB-Hz
+New GPS NAV message received in channel 10: subframe 2 from satellite GPS PRN 11 (Block III) with CN0=43.94 dB-Hz
+New GPS NAV message received in channel 19: subframe 2 from satellite GPS PRN 20 (Block IIR) with CN0=43.69 dB-Hz
+New GPS NAV message received in channel 5: subframe 2 from satellite GPS PRN 06 (Block IIF) with CN0=44.06 dB-Hz
+Loss of lock in channel 1, satellite GPS PRN 32 (Block IIF) !
+New GPS NAV message received in channel 4: subframe 2 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.25 dB-Hz
+New GPS NAV message received in channel 15: subframe 2 from satellite GPS PRN 24 (Block IIF) with CN0=43.43 dB-Hz
+New GPS NAV message received in channel 9: subframe 2 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.63 dB-Hz
+New GPS NAV message received in channel 7: subframe 2 from satellite GPS PRN 28 (Block III) with CN0=43.96 dB-Hz
+Tracking of GPS L1 C/A signal started on channel 1 for satellite GPS PRN 32 (Block IIF)
+Loss of lock in channel 2, satellite GPS PRN 09 (Block IIF) !
+Loss of lock in channel 3, satellite GPS PRN 04 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 2 for satellite GPS PRN 09 (Block IIF)
+Tracking of GPS L1 C/A signal started on channel 3 for satellite GPS PRN 17 (Block IIR-M)
+Loss of lock in channel 6, satellite GPS PRN 07 (Block IIR-M) !
+Tracking of GPS L1 C/A signal started on channel 6 for satellite GPS PRN 07 (Block IIR-M)
+[1m[32mPosition at 2024-Feb-22 00:00:54.000000 UTC using 8 observations is Lat = 37.354564 [deg], Long = -121.917743 [deg], Height = 31.21 [m][0m
+[1m[32mVelocity: East: -3.51 [m/s], North: 2.94 [m/s], Up = 1.18 [m/s][0m
+Loss of lock in channel 8, satellite GPS PRN 21 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 8 for satellite GPS PRN 21 (Block IIR)
+Loss of lock in channel 12, satellite GPS PRN 13 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 12 for satellite GPS PRN 13 (Block IIR)
+Loss of lock in channel 13, satellite GPS PRN 23 (Block III) !
+Tracking of GPS L1 C/A signal started on channel 13 for satellite GPS PRN 23 (Block III)
+Loss of lock in channel 14, satellite GPS PRN 10 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 14 for satellite GPS PRN 10 (Block IIF)
+Loss of lock in channel 17, satellite GPS PRN 30 (Block IIF) !
+Tracking of GPS L1 C/A signal started on channel 17 for satellite GPS PRN 30 (Block IIF)
+Loss of lock in channel 18, satellite GPS PRN 16 (Block IIR) !
+Tracking of GPS L1 C/A signal started on channel 18 for satellite GPS PRN 16 (Block IIR)
+Current receiver time: 56 s
+[1m[32mPosition at 2024-Feb-22 00:00:55.000000 UTC using 8 observations is Lat = 37.354587 [deg], Long = -121.917824 [deg], Height = 33.49 [m][0m
+[1m[32mVelocity: East: -2.93 [m/s], North: 3.83 [m/s], Up = -1.22 [m/s][0m
+Current receiver time: 57 s
+[1m[32mPosition at 2024-Feb-22 00:00:56.000000 UTC using 8 observations is Lat = 37.354657 [deg], Long = -121.917835 [deg], Height = 23.07 [m][0m
+[1m[32mVelocity: East: -3.01 [m/s], North: 4.07 [m/s], Up = -0.48 [m/s][0m
+Current receiver time: 58 s
+[1m[32mPosition at 2024-Feb-22 00:00:57.000000 UTC using 8 observations is Lat = 37.354675 [deg], Long = -121.917863 [deg], Height = 31.26 [m][0m
+[1m[32mVelocity: East: -3.34 [m/s], North: 3.76 [m/s], Up = -1.40 [m/s][0m
+Current receiver time: 59 s
+[1m[32mPosition at 2024-Feb-22 00:00:58.000000 UTC using 8 observations is Lat = 37.354687 [deg], Long = -121.917916 [deg], Height = 31.64 [m][0m
+[1m[32mVelocity: East: -3.69 [m/s], North: 3.84 [m/s], Up = -0.68 [m/s][0m
+Current receiver time: 1 min 0 s
+[1m[32mPosition at 2024-Feb-22 00:00:59.000000 UTC using 8 observations is Lat = 37.354744 [deg], Long = -121.917963 [deg], Height = 28.86 [m][0m
+[1m[32mVelocity: East: -3.43 [m/s], North: 3.78 [m/s], Up = 0.27 [m/s][0m
+Current receiver time: 1 min 1 s
+New GPS NAV message received in channel 11: subframe 3 from satellite GPS PRN 12 (Block IIR-M) with CN0=43.42 dB-Hz
+New GPS NAV message received in channel 10: subframe 3 from satellite GPS PRN 11 (Block III) with CN0=44.02 dB-Hz
+New GPS NAV message received in channel 19: subframe 3 from satellite GPS PRN 20 (Block IIR) with CN0=43.86 dB-Hz
+New GPS NAV message received in channel 16: subframe 3 from satellite GPS PRN 25 (Block IIF) with CN0=43.21 dB-Hz
+New GPS NAV message received in channel 5: subframe 3 from satellite GPS PRN 06 (Block IIF) with CN0=43.39 dB-Hz
+New GPS NAV message received in channel 4: subframe 3 from satellite GPS PRN 05 (Block IIR-M) with CN0=43.87 dB-Hz
+New GPS NAV message received in channel 15: subframe 3 from satellite GPS PRN 24 (Block IIF) with CN0=43.44 dB-Hz
+New GPS NAV message received in channel 9: subframe 3 from satellite GPS PRN 29 (Block IIR-M) with CN0=43.94 dB-Hz
+New GPS NAV message received in channel 7: subframe 3 from satellite GPS PRN 28 (Block III) with CN0=44.07 dB-Hz
+Stopping GNSS-SDR, please wait!
+Generating .mat file for /home/nvidia/Workspace/GNSS/gnss-sdr/logs/fixcheck4/cpu/obs_dump.dat
+Generating .mat file for /home/nvidia/Workspace/GNSS/gnss-sdr/logs/fixcheck4/cpu/pvt_dump.dat
+Total GNSS-SDR run time: 175.275173 [seconds]
+GNSS-SDR program ended.
+
